@@ -28,11 +28,11 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Align(
+                 Align(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Name",
-                      style: TextStyle(
+                      prefs!.getString("user").toString(),
+                      style: const TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
                       ),
